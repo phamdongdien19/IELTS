@@ -1,0 +1,214 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+</head>
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio controls="" controlslist="nodownload">
+      <source src="source.mp3" type="audio/mp3" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div>
+    <h2>
+      Questions 1-3
+    </h2>
+    <p>
+      <em
+        >Listen and decide which picture, A, B or C, matches the
+        description.</em
+      >
+    </p>
+    <p>
+      <em
+        ><img
+          src="http://images.mini-ielts.com/images/2017/7/Identifying detail_resized.jpg"
+          alt=""
+          width="384"
+          height="310"
+      /></em>
+    </p>
+    <p><strong>1</strong>. What is the picture matches in the picture 1?</p>
+    <p style="padding-left: 30px;">
+      <b>A</b>
+      <input type="radio" name="q1" value="A"  /> Picture A
+    </p>
+    <p style="padding-left: 30px;">
+      <b>B</b>
+      <input
+        type="radio"
+        name="q1"
+        value="B"
+        
+      />&nbsp;Picture&nbsp;B
+    </p>
+    <p style="padding-left: 30px;">
+      <b>C</b>
+      <input
+        type="radio"
+        name="q1"
+        value="C"
+        
+      />&nbsp;Picture C
+    </p>
+    <!-- <p><strong>2</strong>. What is the picture matches in the picture 2?</p>
+    <p style="padding-left: 30px;">
+      <b>A</b>
+      <input type="radio" name="q2" value="A" onclick="grd(this)" /> Picture A
+    </p>
+    <p style="padding-left: 30px;">
+      <b>B</b>
+      <input
+        type="radio"
+        name="q2"
+        value="B"
+        onclick="grd(this)"
+      />&nbsp;Picture&nbsp;B
+    </p>
+    <p style="padding-left: 30px;">
+      <b>C</b>
+      <input
+        type="radio"
+        name="q2"
+        value="C"
+        onclick="grd(this)"
+      />&nbsp;Picture C
+    </p>
+    <p><strong>3</strong>. What is the picture matches in the picture 3?</p>
+    <p style="padding-left: 30px;">
+      <b>A</b>
+      <input type="radio" name="q3" value="A" onclick="grd(this)" /> Picture A
+    </p>
+    <p style="padding-left: 30px;">
+      <b>B</b>
+      <input
+        type="radio"
+        name="q3"
+        value="B"
+        onclick="grd(this)"
+      />&nbsp;Picture&nbsp;B
+    </p>
+    <p style="padding-left: 30px;">
+      <b>C</b>
+      <input
+        type="radio"
+        name="q3"
+        value="C"
+        onclick="grd(this)"
+      />&nbsp;Picture C
+    </p> -->
+  </div>
+</div>
+
+<div class="exam-section panel text-center">
+  <p></p>
+  <h4>---End of the Test---</h4>
+  <p></p>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: Design of a public building
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 10</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table
+        class="table table-bordered table-condensed text-left"
+        style="width: 100%"
+      >
+        <tbody>
+          <tr>
+            <td style="width: 10%">
+              <b>1.</b> C : <span style="font-style: italic">C</span>
+              <span class="glyphicon glyphicon-ok" style="color: green"></span>
+            </td>
+            <td style="width: 10%">
+              <b>3.</b> C : <span style="font-style: italic">B</span>
+              <span
+                class="glyphicon glyphicon-remove"
+                style="color: red"
+              ></span>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 10%">
+              <b>2.</b> A : <span style="font-style: italic">A</span>
+              <span class="glyphicon glyphicon-ok" style="color: green"></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p id="buttonShow">
+    <a
+      onclick="submit()"
+      class="btn btn-success"
+      data-toggle="modal"
+      data-target="#confirmSubmit"
+      ><i class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a
+    >
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"
+      ><i class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Hidden</a
+    >
+  </p>
+</div>
+
+<script>
+  function submit() {
+    var x = document.getElementById("test");
+    var y = document.getElementById("buttonHidden");
+    var z = document.getElementById("buttonShow");
+    var count = 0;
+    var arrA = [
+      "C",
+      "A",
+      "C",
+    ];
+    // for (let i = 1; i <= 3; i++) {
+    //   let content = document.getElementById("q" + i).value;
+    //   if (arrA[i - 1] === content.trim()) {
+    //     count += 1;
+    //   }
+    //   console.log(content);
+      
+    // }
+  for (let j = 1; j <= 3; j++) {
+    var checkq = document.getElementsByName('q' + j);
+    var ischecked_method = false;
+    for ( var i = 0; i < checkq.length; i++) {
+    if(checkq[i].checked) {
+        ischecked_method = true;
+        break;
+    }
+}
+console.log(checkq);
+
+}
+      
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      document.getElementById("scoreValue").innerHTML = count;
+      y.style.display = "block";
+      z.style.display = "none";
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById("test");
+    var y = document.getElementById("buttonHidden");
+    var z = document.getElementById("buttonShow");
+    x.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "block";
+  }
+</script>
